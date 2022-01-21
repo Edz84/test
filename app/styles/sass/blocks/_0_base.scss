@@ -1,0 +1,56 @@
+// Fonts
+$light: 500;
+$regular: 600;
+$bold: 700;
+
+//html body 
+body, html {
+    height: 100%;
+    font-weight: $light;
+}
+h1, h2 {
+    font-weight: $regular; 
+}
+ul li {
+    list-style-type: none;
+}	
+body {
+    font-family: $themefont; 
+    position: relative;
+	overflow-x: hidden;
+    section {
+        padding-top: $section-padding;
+        padding-bottom: $section-padding;
+    }
+}
+
+//buttons
+.btn.btn-primary {
+    background-color: $btn-default-color;
+    border: none;
+    border-radius: $border;
+    border-bottom: 5px solid #CA7600;
+    font-weight: $regular;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 24px 40px;
+    outline: none;
+    &:hover {
+        opacity: .8;
+        background-color: $btn-default-color;
+        border-bottom: 5px solid #CA7600;
+    }
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active {
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        border-bottom: 1px solid;
+        background-color: $btn-default-color;
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: none;
+    }
+}
+
+
+

@@ -1,0 +1,29 @@
+footer {
+    background-color: $main-color;
+    .footerWrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerLogo {
+        padding: 25px 0;
+    }
+    .footerNav {
+        display: flex;
+    }
+    .footerNav__item {
+        margin: 0 15px;
+    }
+    .footerNav__item-link {
+        color: $white-color;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: underline;
+    }
+    .footerCopytight {
+        font-size: 12px;
+        line-height: 18px;
+        color: $white-color;
+        display: flex;
+        justify-content: end;
+    }
+}
